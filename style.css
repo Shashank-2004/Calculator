@@ -1,0 +1,85 @@
+.outer{
+    margin-top: 100px;
+    margin-left: 550px;
+    width:400px;
+    height:650px;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 5px solid black;
+}
+
+.display{
+    padding-top: 100px;
+    padding-left: 250px;
+    font-size: 30px;
+    height:50px;
+    background-color: aqua;
+}
+
+.options{
+    padding-left: 17px;
+    margin-top: 5px;
+    padding-top: 15px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: lightcyan;
+}
+
+.cal{
+    width:80px;
+    height:80px;
+    font-size: 40px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+}
+
+#Clear{
+    color:red;
+}
+
+#bracket{
+    color:orange;
+}
+
+#percentage{
+    color:orange;
+}
+
+#divide{
+    color:orange;
+}
+
+#multiply{
+    color:orange;
+}
+
+#subtract{
+    color:orange;
+}
+
+#plus{
+    color:orange;
+}
+
+#num{
+    background-color: white;
+    color:brown;
+}
+
+#decimal{
+    background-color: white;
+    color:brown;
+}
+
+#plus_and_minus{
+    background-color: white;
+    color:brown;
+}
+
+#result{
+    color: white;
+    background-color: orange;
+}
+
