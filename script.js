@@ -1,4 +1,4 @@
-let display = document.querySelector(".display");
+let display = document.querySelector("#display-text");
 let buttons = document.querySelectorAll(".cal");
 
 buttons.forEach(button => {
@@ -7,6 +7,7 @@ buttons.forEach(button => {
         if (value === "C") {
             display.textContent = "";
         } 
+        
         else if(value ==="()")
         {
             let text=display.textContent;
@@ -35,6 +36,14 @@ buttons.forEach(button => {
             } catch {
                 display.textContent = "Error";
             }
+            if (display.textContent === "Error") 
+            {
+                document.querySelector(".cursor").style.display = "none";
+            } 
+            else 
+            {
+                document.querySelector(".cursor").style.display = "inline";
+            }
         } 
         else {
             display.textContent += value;
@@ -60,6 +69,14 @@ document.addEventListener("keydown", (event) => {
         } catch {
             display.textContent = "Error";
         }
+        if (display.textContent === "Error") 
+            {
+                document.querySelector(".cursor").style.display = "none";
+            } 
+            else 
+            {
+                document.querySelector(".cursor").style.display = "inline";
+            }
     }
     else if (key === "Escape" || key === "c" || key === "C") {
         display.textContent = "";
