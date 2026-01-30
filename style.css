@@ -130,3 +130,32 @@ body {
     background-color: orange;
 }
 
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .outer {
+        width: 100%;
+        max-width: 360px;
+        border-width: 3px;
+    }
+
+    .display {
+        font-size: 26px;
+        height: 110px;
+        padding: 12px;
+    }
+
+    .options {
+        padding-left: 10px;
+        padding-top: 12px;
+        gap: 10px;
+    }
+
+    .cal {
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+}
