@@ -8,20 +8,49 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column; /* Stack text and calculator */
     justify-content: center;
     align-items: center;
-    background: white;
+    /* Attractive Animated Gradient Background */
+    background: linear-gradient(-45deg, #FFCF71, #23D5AB, #23A6D5, #E73C7E);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Styling for the new text */
+.header-text {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.header-text p {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* --- YOUR ORIGINAL CALCULATOR DIMENSIONS --- */
+
 .outer{
-    width:400px;
+    width:400px; /* Kept exactly 400px */
     align-items: center;
     justify-content: space-evenly;
     border: 4px solid black;
-    border-top-left-radius: 34px;
-    border-top-right-radius: 34px;
-    border-bottom-left-radius: 34px;
-    border-bottom-right-radius: 34px;
+    background-color: skyblue; /* Matching your options background */
+    border-radius: 34px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4); /* Added shadow for pop */
 }
 
 .display{
